@@ -37,6 +37,8 @@ project {
 object TeamCityFolau : BuildType({
     name = "TeamCityFolau"
 
+    artifactRules = "target/*.jar"
+
     vcs {
         root(HttpsGithubComFolau1exampleTeamcityGit)
     }
